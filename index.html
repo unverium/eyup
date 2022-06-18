@@ -11,10 +11,10 @@
         <link rel="icon" href="/favicon.jpg" type="image/x-icon" />
 
         <!-- Dışardan css (stil) dosyası çekmek için -->
-        <link rel="stylesheet" href="/example.css" />
+        <!-- <link rel="stylesheet" href="/example.css" /> -->
 
         <!-- Dışardan javascript (betik) dosyası çekmek için -->
-        <script src="/example.js"></script>
+        <!-- <script src="/example.js"></script> -->
 
         <!--/ Head içerisine css kodu yazmak için -->
         <!--
@@ -33,6 +33,42 @@
         </script>
         -->
         <!-- Head içerisine javascript kodu yazmak için /-->
+        <style>
+            .row {
+                background-color: gray;
+                display: flex;
+            }
+
+            .column {
+                flex: 1 1 auto;
+            }
+
+            .italic {
+                font-style: italic;
+            }
+        </style>
     </head>
-    <body></body>
+    <body>
+        <h1>Başlık 1</h1>
+        <h2>Başlık 2</h2>
+        <h3>Başlık 3</h3>
+        <h4>Başlık 4</h4>
+        <h5>Başlık 5</h5>
+        <h6>Başlık 6 <span>asdasd</span></h6>
+        <p>
+            Lorem Ipsum is simply <span class="italic"> dummy text</span> of the printing and typesetting industry. Lorem Ipsum has been the industry's standard
+            dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not
+            only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the
+            release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including
+            versions of Lorem Ipsum.
+        </p>
+        <div style="width: 500px; height: 500px; background-color: aqua">
+            <p>asdasdasd</p>
+        </div>
+        <div class="row">
+            <div class="column column-1">asdasjkasd</div>
+            <div class="column column-2">asdasdas</div>
+            <div class="column column-3">3</div>
+        </div>
+    </body>
 </html>
