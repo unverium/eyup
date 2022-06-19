@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>CSS</title>
+        <link rel="stylesheet" href="/bootstrap-reboot.css" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link href="https://fonts.googleapis.com/css2?family=Fascinate&display=swap" rel="stylesheet" />
+        <style>
+            body {
+                background-color: red;
+            }
+
+            #kutu {
+                background-color: white; /* Arkaplan rengini değiştirme */
+                /* background-image: url("/images/wallpaper.jpg"); /* Arkaplana resim koyma */
+                /* background-position: center center; /* Arkaplan konumunu belirleme left-right-top-bottom-center */
+                /* background-repeat: no-repeat; /* Arkaplan tekrarı */
+                /* background-size: cover; /* Arkaplan yerleşimi */
+                /* background-attachment: fixed; /* Arkaplan davranışı */
+                width: 200px; /* Genişlik */
+                height: 200px; /* Yükseklik */
+                /* border: 1px solid green; /* Çerçeve */
+                /* box-shadow: 10px 10px 0 0 black; /* Gölge */
+                border-radius: 10px 20px 30px 40px; /* Köşeleri yuvarlama */
+                margin: 50px; /* Elementin dış boşluğu */
+                padding: 20px; /* Elementin iç boşluğu */
+                color: green; /* Yazının rengi */
+                font-size: 50px; /* Yazı boyutu */
+                font-weight: 800; /* Yazı kalınlığı  */
+                font-style: italic; /* Yazı tipi eğik, düz vs. */
+                font-family: "Fascinate", cursive; /* Yazı fontu */
+                text-align: center; /* Yazının yerleşimi left-center-right */
+                /* display: block; /* Element görünsün-görünmesin none-block */
+            }
+
+            @media screen and (max-width: 800px) {
+                /* 800px altı */
+                body {
+                    background-color: purple;
+                }
+            }
+
+            @media screen and (max-width: 480px) {
+                /* 480px altı */
+                body {
+                    background-color: lightgreen;
+                }
+
+                #kutu {
+                    width: auto;
+                    margin: 20px;
+                    padding: 10px;
+                    border-radius: 0;
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <div id="kutu">Ünver</div>
+    </body>
+</html>
