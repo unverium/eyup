@@ -11,7 +11,21 @@
         <link href="https://fonts.googleapis.com/css2?family=Fascinate&display=swap" rel="stylesheet" />
         <style>
             body {
-                background-color: red;
+                margin: 50px;
+                background-color: white;
+            }
+
+            .button {
+                border: 1px solid #0b3e37;
+                background-color: #fff;
+                padding: 10px 20px;
+                margin: 5px;
+                color: #0b3e37;
+            }
+
+            .colored {
+                background-color: #0b3e37;
+                color: #fff;
             }
 
             #kutu {
@@ -60,6 +74,11 @@
         </style>
     </head>
     <body>
+        <form action="" method="get">
+            <input type="text" name="serialNumber" />
+            <button type="submit" class="button colored">Learn More</button>
+        </form>
+        <button type="submit" class="button">Learn More</button>
         <div id="kutu">Ünver</div>
     </body>
 </html>
